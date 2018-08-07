@@ -5,5 +5,4 @@ package com.hongghe.patternexample.visitor;
  *
  * @author hongghe 28/07/2018
  */
-public class PackageInfo {
-}
+
