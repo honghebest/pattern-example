@@ -9,6 +9,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author hongghe 07/2018
  */
 @Data
-@ConfigurationProperties("pattern")
+@ConfigurationProperties(prefix = "patterndemo")
 public class PatternExampleProperties {
 }
