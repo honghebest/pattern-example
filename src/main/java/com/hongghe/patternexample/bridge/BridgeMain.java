@@ -13,6 +13,6 @@ public class BridgeMain {
     private static final Logger LOGGER = LoggerFactory.getLogger(BridgeMain.class);
 
     public static void main(String[] args) {
-
+        LOGGER.info("This is the main class of the Bridge.");
     }
 }

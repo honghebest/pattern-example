@@ -1,0 +1,12 @@
+package com.hongghe.patternexample.bridge;
+
+/**
+ * The writing of man
+ *
+ * @author hongghe 08/08/2018
+ */
+public interface Writing {
+
+    /** 准备纸张*/
+    void takePaper();
+}
