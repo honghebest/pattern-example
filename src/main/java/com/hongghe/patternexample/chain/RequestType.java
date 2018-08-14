@@ -1,5 +1,5 @@
 package com.hongghe.patternexample.chain;
 
-public enum  RequstType {
+public enum RequestType {
     DEFEND_CASTLE, TORTURE_PRISONER, COLLECT_TAX
 }
