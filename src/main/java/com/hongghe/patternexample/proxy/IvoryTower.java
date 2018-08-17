@@ -12,7 +12,7 @@ public class IvoryTower implements WizardTower {
 
     @Override
     public void enter(Wizard wizard) {
-        LOGGER.info("{} enters the tower.", wizard);
+        LOGGER.info("{} Enters the tower.", wizard);
     }
 
 }
