@@ -1,7 +1,7 @@
 package com.hongghe.patternexample.bridge;
 
 /**
- * The writing of man
+ * The writing of Man
  *
  * @author hongghe 08/08/2018
  */

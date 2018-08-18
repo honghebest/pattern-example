@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * The man of writing.
+ * The Man of writing.
  *
  * @author hongghe 09/08/2018
  */
