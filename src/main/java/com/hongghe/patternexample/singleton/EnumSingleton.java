@@ -11,7 +11,7 @@ import java.io.ObjectStreamException;
  *
  * @author hongghe 21/07/2018
  */
-public enum  EnumSingleton {
+public enum EnumSingleton {
 
     INSTANCE;
 

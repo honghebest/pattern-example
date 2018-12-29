@@ -19,6 +19,7 @@ public class LazySynSingleton {
         if (lazySynSingleton == null) {
             return new LazySynSingleton();
         }
+        
         return lazySynSingleton;
     }
 }
