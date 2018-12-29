@@ -4,6 +4,7 @@ package com.hongghe.patternexample.future;
  * @author hongghe 2018/8/17
  */
 public class FutureData<T> {
+
     private boolean mIsReady = false;
     private T mData;
 

@@ -4,6 +4,7 @@ package com.hongghe.patternexample.future;
  * @author hongghe 2018/8/17
  */
 public class Client {
+
     public static void main(String[] args) {
         Server server = new Server();
         FutureData<String> futureData = server.getString();
