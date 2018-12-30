@@ -13,7 +13,7 @@ public class Captain {
     public void setRowingBoat(RowingBoat rowingBoat) {
         this.rowingBoat = rowingBoat;
     }
-
+    
     public void row() {
         rowingBoat.row();
     }
