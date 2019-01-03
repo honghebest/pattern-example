@@ -2,7 +2,7 @@ package com.hongghe.patternexample.visitor.service;
 
 import com.google.gson.Gson;
 import com.hongghe.patternexample.visitor.domain.Student;
-import com.hongghe.patternexample.visitor.domain.User;
+import com.hongghe.patternexample.visitor.domain.Worker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +17,12 @@ public class LearningEnglish  extends Learning {
 
     @Override
     public <User> void init(User user) {
+        if (user instanceof Student) {
+            System.out.println("You are student.");
+        } else if (user instanceof Worker) {
+            System.out.println("You ara worker.");
+        }
+
         System.out.println(new Gson().toJson(user));
         LOGGER.info("The study english init.");
     }
