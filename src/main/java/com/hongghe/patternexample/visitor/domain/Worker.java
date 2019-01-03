@@ -6,5 +6,5 @@ package com.hongghe.patternexample.visitor.domain;
  * @author hongghe 28/07/2018
  */
 public class Worker extends User {
-    String workerAddress;
+    public String workerAddress;
 }

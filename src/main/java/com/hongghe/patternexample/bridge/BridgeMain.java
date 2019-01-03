@@ -14,5 +14,8 @@ public class BridgeMain {
 
     public static void main(String[] args) {
         LOGGER.info("This is the main class of the Bridge.");
+        Writer writer = new Writer(new Pen(), new Man());
+        writer.takePaper();
+        writer.takePen();
     }
 }

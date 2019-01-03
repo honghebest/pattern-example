@@ -12,7 +12,7 @@ public class Learning {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Learning.class);
 
-    public void init() {
+    public <T> void init(T user) {
         LOGGER.info("The init of the user study.");
     }
 }

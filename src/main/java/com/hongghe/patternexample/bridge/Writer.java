@@ -1,5 +1,6 @@
 package com.hongghe.patternexample.bridge;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,25 +9,24 @@ import org.slf4j.LoggerFactory;
  *
  * @author hongghe 09/08/2018
  */
+@Slf4j
 public class Writer implements Writing {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(Writer.class);
 
     private Pen pen;
     private Man man;
 
-    private Writer(Pen pen, Man man) {
+    public Writer(Pen pen, Man man) {
         this.man = man;
         this.pen = pen;
     }
 
     @Override
     public void takePaper() {
-        LOGGER.info(" Get the paper.");
+        log.info(" Get the paper.");
     }
 
     @Override
     public void takePen() {
-        LOGGER.info("Get the pen.");
+        log.info("Get the pen.");
     }
 }
