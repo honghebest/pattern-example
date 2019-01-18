@@ -7,4 +7,5 @@ package com.hongghe.patternexample.visitor.domain;
  */
 public class Worker extends User {
     public String workerAddress;
+    public String workerHouseAddress;
 }

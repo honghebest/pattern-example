@@ -9,6 +9,7 @@ import lombok.Data;
  */
 @Data
 public class Student extends User {
+
     public String age;
 
     public Student(String age) {

@@ -3,18 +3,15 @@ package com.hongghe.patternexample.visitor.service;
 import com.google.gson.Gson;
 import com.hongghe.patternexample.visitor.domain.Student;
 import com.hongghe.patternexample.visitor.domain.Worker;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * The study english.
  *
  * @author hongghe 28/07/2018
  */
+@Slf4j
 public class LearningEnglish  extends Learning {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(LearningEnglish.class);
-
     @Override
     public <User> void init(User user) {
         if (user instanceof Student) {
@@ -24,7 +21,7 @@ public class LearningEnglish  extends Learning {
         }
 
         System.out.println(new Gson().toJson(user));
-        LOGGER.info("The study english init.");
+        log.info("The study english init.");
     }
 
 
