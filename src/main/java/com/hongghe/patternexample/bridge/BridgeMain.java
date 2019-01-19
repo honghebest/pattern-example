@@ -1,5 +1,6 @@
 package com.hongghe.patternexample.bridge;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,12 +9,11 @@ import org.slf4j.LoggerFactory;
  *
  * @author hongghe 08/08/2018
  */
+@Slf4j
 public class BridgeMain {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(BridgeMain.class);
-
     public static void main(String[] args) {
-        LOGGER.info("This is the main class of the Bridge.");
+        log.info("This is the main class of the Bridge.");
         Writer writer = new Writer(new Pen(), new Man());
         writer.takePaper();
         writer.takePen();

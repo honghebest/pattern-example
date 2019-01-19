@@ -8,6 +8,6 @@ package com.hongghe.patternexample.bridge;
 public interface Writing {
     /** 准备纸张*/
     void takePaper();
-    /** tabe pen before write*/
+    /** take pen before write*/
     void takePen();
 }
