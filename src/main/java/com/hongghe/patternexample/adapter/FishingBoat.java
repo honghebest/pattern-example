@@ -1,13 +1,11 @@
 package com.hongghe.patternexample.adapter;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class FishingBoat {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(FishingBoat.class);
-
     public void sail() {
-        LOGGER.info("The fishing boat is sailing.");
+        log.info("The fishing boat is sailing.");
     }
 }
