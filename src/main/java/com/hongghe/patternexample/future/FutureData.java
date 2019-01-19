@@ -6,12 +6,12 @@ package com.hongghe.patternexample.future;
 public class FutureData<T> {
 
     private boolean mIsReady = false;
+
     private T mData;
 
     public synchronized void setData(T data) {
         mIsReady = true;
         mData = data;
-
         notifyAll();
     }
 

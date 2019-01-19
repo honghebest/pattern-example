@@ -4,6 +4,7 @@ package com.hongghe.patternexample.future;
  * @author hongghe 2018/8/17
  */
 public class Server {
+
     public FutureData<String> getString() {
         final FutureData<String> data = new FutureData<>();
         new Thread(new Runnable() {
