@@ -1,6 +1,8 @@
 package com.hongghe.patternexample.visitor.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
@@ -10,11 +12,8 @@ import lombok.ToString;
  */
 @Data
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student extends User {
-
     public String age;
-
-    public Student(String age) {
-        this.age = age;
-    }
 }

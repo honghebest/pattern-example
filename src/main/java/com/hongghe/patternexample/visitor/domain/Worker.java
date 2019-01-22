@@ -17,4 +17,8 @@ import lombok.ToString;
 public class Worker extends User {
     public String workerAddress;
     public String workerHouseAddress;
+
+    public Worker(String s, String s1, String s2) {
+        super();
+    }
 }

@@ -30,6 +30,6 @@ public class LearningEnglish  extends Learning {
         learningEnglish.<Student>init(new Student("2"));
 
         LearningEnglish work = new LearningEnglish();
-        work.init(new Worker("3", "2"));
+        work.init(new Worker("3", "2", "1"));
     }
 }
