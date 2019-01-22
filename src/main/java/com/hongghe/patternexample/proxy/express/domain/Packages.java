@@ -9,6 +9,7 @@ import lombok.Data;
 @Data
 @Builder(builderClassName = "Builder", toBuilder = true)
 public class Packages {
+    private String key;
     private double weight;
     private String sendDate;
     private String receivedDate;

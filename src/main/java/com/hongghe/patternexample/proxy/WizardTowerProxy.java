@@ -1,14 +1,12 @@
 package com.hongghe.patternexample.proxy;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author hongghe 2018/8/17
  */
+@Slf4j
 public class WizardTowerProxy implements WizardTower {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(WizardTowerProxy.class);
 
     private static final int NUM_WIZARDS_ALLOWED = 3;
 
@@ -26,7 +24,7 @@ public class WizardTowerProxy implements WizardTower {
             tower.enter(wizard);
             numWizards++;
         } else {
-            LOGGER.info("{} is not allowed to enter!", wizard);
+            log.info("{} is not allowed to enter!", wizard);
         }
     }
 }

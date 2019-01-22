@@ -9,5 +9,6 @@ import lombok.Data;
 @Data
 @Builder(builderClassName = "Builder", toBuilder = true)
 public class Station {
+    private String key;
     private String address;
 }

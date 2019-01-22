@@ -9,5 +9,5 @@ public interface express {
 
     boolean send(Packages packages);
 
-    Packages receive();
+    Packages receive(String key);
 }
