@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class LearningEnglish  extends Learning {
+
     @Override
     public <User> void init(User user) {
         if (user instanceof Student) {
@@ -24,9 +25,11 @@ public class LearningEnglish  extends Learning {
         log.info("The study english init.");
     }
 
-
     public static void main(String[] args) {
         LearningEnglish learningEnglish = new LearningEnglish();
         learningEnglish.<Student>init(new Student("2"));
+
+        LearningEnglish work = new LearningEnglish();
+        work.init(new Worker("3", "2"));
     }
 }

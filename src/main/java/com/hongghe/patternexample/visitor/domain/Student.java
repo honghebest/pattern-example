@@ -1,6 +1,7 @@
 package com.hongghe.patternexample.visitor.domain;
 
 import lombok.Data;
+import lombok.ToString;
 
 /**
  * The student properties.
@@ -8,6 +9,7 @@ import lombok.Data;
  * @author hongghe 28/07/2018
  */
 @Data
+@ToString
 public class Student extends User {
 
     public String age;
