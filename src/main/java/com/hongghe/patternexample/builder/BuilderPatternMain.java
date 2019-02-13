@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
  * @author hongghe
  */
 @Slf4j
-public class BuilderDemo implements BuilderFactory {
+public class BuilderPatternMain implements BuilderFactory {
 
     @Override
     public void BuilderFactory() {

@@ -15,6 +15,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Worker extends User {
+
     public String workerAddress;
     public String workerHouseAddress;
 
