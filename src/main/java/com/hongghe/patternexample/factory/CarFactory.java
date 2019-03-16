@@ -4,8 +4,6 @@ import com.hongghe.patternexample.factory.domain.Car;
 import com.hongghe.patternexample.factory.service.AudiFactory;
 import com.hongghe.patternexample.factory.service.BMWFactory;
 import com.hongghe.patternexample.factory.service.BenzFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * 工厂模式
@@ -13,8 +11,6 @@ import org.slf4j.LoggerFactory;
  * @author hongghe 21/07/2018
  */
 public class CarFactory {
-
-    private static final Logger logger = LoggerFactory.getLogger(CarFactory.class);
 
     public static CarProduce produce(Car car) throws Exception {
         switch (car.getType()) {
