@@ -5,5 +5,10 @@ package com.hongghe.patternexample.proxy;
  */
 public interface WizardTower {
 
+    /**
+     * enter method
+     *
+     * @param wizard 参数类型的设置
+     */
     void enter(Wizard wizard);
 }
