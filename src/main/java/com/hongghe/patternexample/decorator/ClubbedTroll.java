@@ -1,15 +1,13 @@
 package com.hongghe.patternexample.decorator;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author hongghe
  * @date 2018/8/16
  */
+@Slf4j
 public class ClubbedTroll implements Troll {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(ClubbedTroll.class);
 
     private Troll trollDecorated;
 
@@ -20,7 +18,7 @@ public class ClubbedTroll implements Troll {
     @Override
     public void attack() {
         trollDecorated.attack();
-        LOGGER.info("Clubbed troll ");
+        log.info("Clubbed troll ");
     }
 
     @Override
