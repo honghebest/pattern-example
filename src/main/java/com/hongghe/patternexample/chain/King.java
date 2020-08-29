@@ -1,5 +1,8 @@
 package com.hongghe.patternexample.chain;
 
+/**
+ * @author honghe zhang
+ */
 public class King {
 
     RequestHandler requestHandler;

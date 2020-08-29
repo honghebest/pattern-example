@@ -1,5 +1,8 @@
 package com.hongghe.patternexample.chain;
 
+/**
+ * @author henry
+ */
 public class Officer extends RequestHandler {
 
     public Officer(RequestHandler requestHandler) {
