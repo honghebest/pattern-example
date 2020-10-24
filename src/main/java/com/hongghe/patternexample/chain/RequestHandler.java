@@ -3,6 +3,9 @@ package com.hongghe.patternexample.chain;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author henry
+ */
 public abstract class RequestHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RequestHandler.class);

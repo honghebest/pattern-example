@@ -9,15 +9,15 @@ import org.slf4j.LoggerFactory;
  */
 public class Demo {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Demo.class);
+    private static final Logger LOG = LoggerFactory.getLogger(Demo.class);
 
     public static void main(String[] args) {
-        LOGGER.info("Message : ");
+        LOG.info("Message : ");
 
         LetterComposite orcMessage = new Messenger().messageFromOrcs();
         orcMessage.print();
 
-        LOGGER.info("Message : ");
+        LOG.info("Message : ");
 
         LetterComposite elfMessage = new Messenger().messageFromElves();
         elfMessage.print();

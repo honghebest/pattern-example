@@ -1,5 +1,8 @@
 package com.hongghe.patternexample.chain;
 
+/**
+ * @author henry
+ */
 public class Commander  extends RequestHandler {
 
     public Commander(RequestHandler requestHandler) {

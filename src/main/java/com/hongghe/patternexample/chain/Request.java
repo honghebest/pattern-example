@@ -2,6 +2,9 @@ package com.hongghe.patternexample.chain;
 
 import java.util.Objects;
 
+/**
+ * @author henry
+ */
 public class Request {
 
     private final RequestType requestType;
