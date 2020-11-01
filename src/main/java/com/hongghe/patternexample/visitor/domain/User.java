@@ -6,6 +6,14 @@ package com.hongghe.patternexample.visitor.domain;
  * @author hongghe 28/07/2018
  */
 public abstract class User {
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String name;
     public String address;
 }
