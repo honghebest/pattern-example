@@ -3,6 +3,7 @@ package com.hongghe.patternexample;
 import com.zaxxer.hikari.HikariDataSource;
 import com.zaxxer.hikari.metrics.prometheus.PrometheusMetricsTrackerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
@@ -14,6 +15,7 @@ import javax.sql.DataSource;
  */
 public class PatternExampleInitializer {
 
+    @Qualifier("dataSource")
     @Autowired
     private DataSource dataSource;
 
